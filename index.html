@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; 
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 10px;
+        } 
+        .container{
+            display: flex;
+            height: 100vh;
+            /* background-color: gray; */
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            /* background-color: blue; */
+            width: 900px;
+            height: 500px;
+            display: flex;
+        } 
+        .image{
+            /* background-color: red; */
+            width: 50%;
+        }
+        .form-layout{
+            /* background-color: yellow; */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-group{
+            /* background-color: white; */
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        label{
+            display: block;
+            margin-bottom: 3px;
+        }
+       .form-group input{
+        width: 300px;
+        height: 30px;
+        padding: 10px;
+        outline: 1px solid black;
+        border: 1px solid blue;
+        border-radius: 5px;
+       }
+       button{
+        width: 300px;
+        height: 30px;
+        outline: 1px solid black;
+        border: 1px solid blue;
+        border-radius: 5px;
+        background-color: aqua;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mian-container">
+            <h1>Register Form</h1>
+            <div class="content">
+                <div class="form-layout">
+                   <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name....">
+                   </div>
+                   <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Enter your email....">
+                   </div> 
+                   <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your phone....">
+                   </div> 
+                   <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Enter your address....">
+                   </div> 
+                   <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="text" name="age" id="age" placeholder="Enter your age....">
+                   </div>
+                   <div class="form-group">
+                        <button>Submit</button>
+                   </div>
+                </div>
+                <div class="image">
+                    image
+                </div>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>

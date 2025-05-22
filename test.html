@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox Center Example</title>
+  <style>
+    body, html {
+      /* height: 100%; */
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;        /* Vertical alignment */
+      justify-content: center;    /* Horizontal alignment */
+      height: 50vh;
+      background-color: #f0f0f0;
+    }
+
+    .box {
+      background-color: #3498db;
+      color: white;
+      padding: 40px 60px;
+      font-size: 24px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">Centered Box</div>
+  </div>
+</body>
+</html>
